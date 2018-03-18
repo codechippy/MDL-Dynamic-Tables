@@ -14,3 +14,6 @@ Table cols have also been truncated in small screes to hide overflow.
 
 ![ScreenShot](Screenshot 2018-03-18 at 17.45.53.png)
 
+<img src="screenshot.png?raw=true" width="100" height="100" />
+
+
