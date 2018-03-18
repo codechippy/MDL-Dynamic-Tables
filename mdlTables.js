@@ -1,5 +1,5 @@
-
 // A Simple contact list using javascript arrays and objects
+
 //Event handler for the Header checkbox MDL No longer handles this
 function updateCheckBox(headerCB) {
 	var table = document.querySelector('table');
@@ -45,18 +45,17 @@ function freshUpdate(name, email) {
 	// create new elements
 	tmptr = document.createElement("tr");
 	tmptd = document.createElement("td");
-    tmptd.setAttribute ("class","mdl-data-table__cell--non-numeric");
+	tmptd.setAttribute("class", "mdl-data-table__cell--non-numeric");
 	tmplabel = document.createElement("label");
-	tmplabel.setAttribute("class",
-		"mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect mdl-data-table__select");
+	tmplabel.setAttribute("class", "mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect mdl-data-table__select");
 	tmpinput = document.createElement("input");
 	tmpinput.setAttribute("class", "mdl-checkbox__input");
 	tmpinput.setAttribute("type", "checkbox");
 	tmptd2 = document.createElement("td");
-	tmptd2.setAttribute ("class","mdl-data-table__cell--non-numeric");
+	tmptd2.setAttribute("class", "mdl-data-table__cell--non-numeric");
 	tmptd2.innerHTML = name;
 	tmptd3 = document.createElement("td");
-	tmptd3.setAttribute ("class","mdl-data-table__cell--non-numeric");
+	tmptd3.setAttribute("class", "mdl-data-table__cell--non-numeric");
 	tmptd3.innerHTML = email;
 	// connect new Elements into the "tr row" element
 	tmplabel.appendChild(tmpinput);
@@ -73,24 +72,20 @@ function freshUpdate(name, email) {
 	// Insert new elements into the DOM
 	listContainer.appendChild(tmptr);
 }
-
 //MDL Text Input Cleanup fixes the dirty bit on the MDL form
-  function mdlCleanUp(){
-    var mdlInputs = document.querySelectorAll('.mdl-js-textfield');
-    for (var i = 0, l = mdlInputs.length; i < l; i++) {
-      mdlInputs[i].MaterialTextfield.checkDirty();
-    }
-  }
-
-
+function mdlCleanUp() {
+	var mdlInputs = document.querySelectorAll('.mdl-js-textfield');
+	for (var i = 0, l = mdlInputs.length; i < l; i++) {
+		mdlInputs[i].MaterialTextfield.checkDirty();
+	}
+}
 // Event handler for the Add Button
 function addPerson() {
 	//alert(document.getElementById('fullName').value)
-	freshUpdate(document.getElementById('fullName').value, document.getElementById(
-		'email').value);
-		document.getElementById("contactForm").reset();
-		mdlCleanUp();
-//document.getElementById('fullName').reset();
-//	document.getElementById('email').value = "";
+	freshUpdate(document.getElementById('fullName').value, document.getElementById('email').value);
+	document.getElementById("contactForm").reset();
+	mdlCleanUp();
+	//document.getElementById('fullName').reset();
+	//	document.getElementById('email').value = "";
 	return false;
 }
