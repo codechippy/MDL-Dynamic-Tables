@@ -14,6 +14,6 @@ Table cols have also been truncated in small screes to hide overflow.
 
 ![ScreenShot](Screenshot 2018-03-18 at 17.45.53.png)
 
-<img src="https://github.com/codechippy/MDL-Dynamic-Tables/blob/master/Screenshot%202018-03-18%20at%2017.45.53.png?raw=true" width="400" height="500" />
+<img src="https://github.com/codechippy/MDL-Dynamic-Tables/blob/master/Screenshot%202018-03-18%20at%2017.45.53.png?raw=true" width="450" height="500" />
 
 
