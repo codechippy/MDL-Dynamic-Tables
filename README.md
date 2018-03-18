@@ -12,5 +12,5 @@ In particular it shows how to get the state of the check boxes which is not well
 Additionally CSS markup has been added to build a responsive table restricting the checkbox to a smaller col on the left of the table.
 Table cols have also been truncated in small screes to hide overflow.
 
-![ScreenShot](Screenshot 2018-03-18 at 17.45.53.png.png)
+![ScreenShot](Screenshot 2018-03-18 at 17.45.53.png)
 
